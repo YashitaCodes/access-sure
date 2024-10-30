@@ -1,22 +1,13 @@
 "use client";
 
-import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { DotPattern } from '@/components/dot-pattern';
 import { GradientBackground } from '@/components/gradient-background';
 import { Button } from '@/components/ui/button';
 import { AlertTriangle, RotateCcw } from 'lucide-react';
 
-interface ErrorProps {
-  error: Error & { digest?: string };
-}
-
-const ErrorPage: React.FC<ErrorProps> = ({ error }) => {
+const ErrorPage = () => {
   const router = useRouter();
-
-  useEffect(() => {
-    console.error(error);
-  }, [error]);
 
   return (
     <main className="relative min-h-screen flex flex-col items-center justify-center p-8">
