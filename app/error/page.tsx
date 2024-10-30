@@ -7,11 +7,11 @@ import { GradientBackground } from '@/components/gradient-background';
 import { Button } from '@/components/ui/button';
 import { AlertTriangle, RotateCcw } from 'lucide-react';
 
-export default function Error({
-  error,
-}: {
+interface ErrorProps {
   error: Error & { digest?: string };
-}) {
+}
+
+const ErrorPage: React.FC<ErrorProps> = ({ error }) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -38,4 +38,6 @@ export default function Error({
       </div>
     </main>
   );
-}
+};
+
+export default ErrorPage;
