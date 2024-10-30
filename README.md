@@ -23,13 +23,13 @@ A lightweight, TypeScript-based **accessibility auditing tool** built on Next.js
 
 ## Quick Demo
 
-Upon searching a page URL, Accessibility Auditor displays the results of the audit, as shown below:
-
-![Results Screenshot](public/assets/audit-results.png)
-
 The home page provides a streamlined search bar for easy page access:
 
 ![Search Bar Home Page Screenshot](public/assets/home.png)
+
+Upon searching a page URL, Accessibility Auditor displays the results of the audit, as shown below:
+
+![Results Screenshot](public/assets/audit-results.png)
 
 ### Get Started
 To clone and run this locally, follow these steps:
